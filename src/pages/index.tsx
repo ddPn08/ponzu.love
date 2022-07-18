@@ -3,6 +3,7 @@ import { styled } from 'solid-styled-components'
 
 import Background from '../assets/images/background.webp'
 import PonzuIcon from '../assets/images/favicon.webp'
+import { Footer } from '../components/footer'
 import { Links } from '../components/links'
 import { Music } from '../components/music'
 import { YouTube } from '../components/youtube'
@@ -79,6 +80,7 @@ const Index: Component = () => {
       <Links />
       <YouTube />
       <Music />
+      <Footer />
     </Container>
   )
 }

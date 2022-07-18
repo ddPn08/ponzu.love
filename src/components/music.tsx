@@ -14,7 +14,7 @@ export const Music: Component = () => {
           margin-top: 1rem;
         `}
       >
-        楽曲一覧
+        楽曲
       </h1>
       <iframe
         src="https://linkco.re/embed/84HMm8B9"

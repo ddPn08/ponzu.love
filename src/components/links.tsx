@@ -66,7 +66,7 @@ export const Links: Component = () => {
         <YouTubeSVG />
         <h1>YouTube</h1>
       </Link>
-      <Link href="https://sp.nicovideo.jp/user/116573198?cp_in=user_watchInformation">
+      <Link href="https://www.nicovideo.jp/user/116573198">
         <TelevisionSVG />
         <h1>ニコニコ</h1>
       </Link>
