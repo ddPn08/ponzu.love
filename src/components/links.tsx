@@ -62,27 +62,27 @@ export const Links: Component = () => {
         width: ${isMobile() ? '90%' : '60%'};
       `}
     >
-      <Link href="https://youtube.com/channel/UCRsK0kVuSf2KIKUAqbByLNA">
+      <Link href="https://youtube.com/channel/UCRsK0kVuSf2KIKUAqbByLNA" target="_blank">
         <YouTubeSVG />
         <h1>YouTube</h1>
       </Link>
-      <Link href="https://www.nicovideo.jp/user/116573198">
+      <Link href="https://www.nicovideo.jp/user/116573198" target="_blank">
         <TelevisionSVG />
         <h1>ニコニコ</h1>
       </Link>
-      <Link href="https://twitter.com/ponzu_1612">
+      <Link href="https://twitter.com/ponzu_1612" target="_blank">
         <TwitterSVG />
         <h1>Twitter</h1>
       </Link>
-      <Link href="https://www.tiktok.com/@ponzu1612">
+      <Link href="https://www.tiktok.com/@ponzu1612" target="_blank">
         <TiktokSVG />
         <h1>Tiktok</h1>
       </Link>
-      <Link href="https://www.instagram.com/ponnnzu_1612/">
+      <Link href="https://www.instagram.com/ponnnzu_1612/" target="_blank">
         <InstagramSVG />
         <h1>Instagram</h1>
       </Link>
-      <Link href="https://www.joinclubhouse.com/@ponzu1612">
+      <Link href="https://www.joinclubhouse.com/@ponzu1612" target="_blank">
         <ClubHouseSVG />
         <h1>Clubhouse</h1>
       </Link>
