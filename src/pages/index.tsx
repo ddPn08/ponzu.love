@@ -62,7 +62,7 @@ const Index: Component = () => {
       }}
       style={{
         /* stylelint-disable */
-        'background-position': scrollRatio() + '%',
+        'background-position': `${scrollRatio()}% 0`,
       }}
     >
       <Title href="/">
