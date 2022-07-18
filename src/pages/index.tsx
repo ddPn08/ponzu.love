@@ -13,6 +13,7 @@ const Container = styled.div`
   background-attachment: fixed;
   color: ${(p) => p.theme?.colors.primary};
   overflow-y: auto;
+  text-align: center;
 `
 
 const Title = styled.a`
@@ -59,7 +60,8 @@ const Index: Component = () => {
         setScrollRatio(ratio)
       }}
       style={{
-        'backgroundPosition': scrollRatio() + '%',
+        /* stylelint-disable */
+        'background-position': scrollRatio() + '%',
       }}
     >
       <Title href="/">

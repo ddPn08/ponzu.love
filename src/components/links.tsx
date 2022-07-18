@@ -1,14 +1,17 @@
 import { Component } from 'solid-js'
-import { styled } from 'solid-styled-components'
+import { css, styled } from 'solid-styled-components'
+import { useMediaQuery } from 'solid-use'
 
 import ClubHouseSVG from '../assets/svg/clubhouse.svg'
 import InstagramSVG from '../assets/svg/instagram.svg'
+import TelevisionSVG from '../assets/svg/television.svg'
 import TiktokSVG from '../assets/svg/tiktok.svg'
 import TwitterSVG from '../assets/svg/twitter.svg'
 import YouTubeSVG from '../assets/svg/youtube.svg'
+import { MediaBreakpoints } from '../media'
 
 const Container = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -52,11 +55,20 @@ const Link = styled.a`
 `
 
 export const Links: Component = () => {
+  const isMobile = useMediaQuery(MediaBreakpoints.sm)
   return (
-    <Container>
+    <Container
+      class={css`
+        width: ${isMobile() ? '90%' : '60%'};
+      `}
+    >
       <Link href="https://youtube.com/channel/UCRsK0kVuSf2KIKUAqbByLNA">
         <YouTubeSVG />
         <h1>YouTube</h1>
+      </Link>
+      <Link href="https://sp.nicovideo.jp/user/116573198?cp_in=user_watchInformation">
+        <TelevisionSVG />
+        <h1>ニコニコ</h1>
       </Link>
       <Link href="https://twitter.com/ponzu_1612">
         <TwitterSVG />

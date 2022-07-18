@@ -9,7 +9,8 @@
     "serve": "vite preview",
     "lint": "eslint src/**/*.{ts,tsx}",
     "stylelint": "stylelint src/**/*.{ts,tsx}",
-    "format": "prettier --write 'src/**/*.{ts,tsx}'"
+    "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "prepush": "yarn lint --fix && yarn stylelint --fix && yarn format && yarn build"
   },
   "license": "MIT",
   "devDependencies": {
